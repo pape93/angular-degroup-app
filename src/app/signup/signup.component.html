@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign up</h1>
+          <h6>Register an account here!</h6>
+        </div>
+
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+          <div class="mb-3">
+            <label for="exampleFullname" class="form-label">Full Name</label>
+            <input
+              formControlName="fullname"
+              type="text"
+              class="form-control"
+              id="exampleFullname"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleMobile" class="form-label">Mobile Number</label>
+            <input
+              formControlName="mobile"
+              type="number"
+              class="form-control"
+              id="exampleMobile"
+              placeholder="Mobile number"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              placeholder="Email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              formControlName="password"
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Signup</button>
+        </form>
+        <a style="color: #fff; margin-top: 5px" routerLink="/login"
+          >Already a registered? Click to login!!</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

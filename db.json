@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "firstName": "Ernie",
+      "lastName": "Boland",
+      "email": "ernieaboland@gmail.com",
+      "mobile": "7673179537",
+      "salary": "1,000"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Ernie Boland",
+      "email": "pape93@gmail.com",
+      "password": "123456",
+      "mobile": null,
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
